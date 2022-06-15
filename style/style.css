@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(150deg, #FFD32D, #008E89, #085E7D, #084594, #008E89);
+    background-color: #084594; 
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+article{
+    display: flex;
+    padding: 35px;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+article#about{
+    height: 350px;
+    font-size: 2em;
+    text-align: justify;
+}
+
+article#about p{
+    font-size: 0.8em;
+}
+
+article#rules{
+    flex-direction: column;
+
+    font-size: 2em;
+    text-align: justify;
+}
+
+#rules h2, #rules p, #rules h4{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+article#rules p{
+    font-size: 0.8em;
+} 
+
+article#game{
+    flex-direction: column;
+
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    background-color: #FFD32D;
+    box-shadow: 3px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #FFD32D;
+    padding: 10px 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-header{
+    display: flex;
+
+    z-index: 3;
+    top: 0;
+    position: sticky;
+    background-color: #FFD32D;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    flex-basis: 35%;
+    padding: 3px 20px;
+}
+
+.header h1{
+    margin-left: 35%;
+}
+
+.img-container{
+    flex-basis: 40%;
+    position: relative;
+    height: 350px;
+    width: 70%;
+}
+
+.image{
+    padding: 10px;
+    position: absolute;
+    max-width: 200px;
+    margin: auto;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.jari-jempol{
+    right: 150px;
+    top: 25%;
+}
+
+.jari-telunjuk{
+    left: 150px;
+    top: 25%;
+    z-index: 2;
+}
+
+.jari-kelingking{
+    bottom: 112.5px;
+    z-index: 1;
+}
+
+main{
+    padding: 10px 50px;
+}
+
+nav{
+    flex-basis: 65%;
+
+    padding: 30px;
+    text-align: right;
+}
+
+nav ul{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#about section{
+    flex-basis: 60%;
+    margin: 20px;
+}
+
+.game-container{
+    background: linear-gradient(180deg,  #008E89, #FFD32D);
+    border-radius: 50px;
+    background-color: #FFD32D;
+    width: 100%;
+    padding: 20px;
+}
+
+.computer-area {
+    width: 100%;
+    height: 250px;
+    margin: 5px auto;
+    background-color: #FFD32D;
+    position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
+    border-radius: 40px 40px;
+}
+
+.player-area {
+    width: 100%;
+    height: 250px;
+    margin: 5px auto;
+    background-color: #085E7D;
+    position: relative;
+    border-radius: 40px 40px;
+}
+
+.info {
+    margin: -25px auto -50px auto;
+    max-width: 150px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.player-area ul{
+    padding-top: 80px;
+    padding-left: 25px;
+}
+
+.player-area ul li{
+    display: inline-block;
+    margin: 0 18px;
+}
+
+.player-area ul li img, .computer-area img{
+    width: 130px;
+    height: 130px;
+    display: inline;
+    border-radius: 50%;
+}
+
+aside{
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.profile{
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+}
+
+.profile header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sec-rules{
+    margin: 100px 0;
+    padding: 20px;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.sec-rules p{
+    margin: 100px auto;
+}
+
+.sec-rules img{
+    max-width: 100%;
+}
+
+.gajah-sec p{
+    float:  right;
+}
+
+.manusia-sec p{
+    float: left;
+}
+
+.semut-sec p{
+    float: right;
+}
+
+.sec-rules .gajah{
+    float: left;
+}
+
+.sec-rules .manusia{
+    float: right;
+}
+
+.sec-rules .semut{
+    float: left;
+}
+
+@media screen and (max-width: 1155px){
+    article#about {
+        align-items: center;
+        flex-direction: column;
+        height: 350px;
+        font-size: 2em;
+        margin-top: 200px;
+        text-align: justify;
+    }
+
+    #about section{
+        margin-top: 150px;
+    }
+
+    .img-container{
+        margin-top: 160px;
+    }
+
+    nav{
+        padding: 30px 0 30px 30px;
+         font-weight: bold;
+    }
+
+    nav ul{
+        margin-right: 10%;
+    }
+
+    nav li a{
+        font-size: 1.5em;
+    }
+
+    .sec-rules{
+        text-align: center;
+    }
+
+    .sec-rules .gajah, .sec-rules .manusia, .sec-rules .semut{
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .sec-rules p{
+        float: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-button{
+        display: block;
+        height: 80px;
+        background: url(../assets/dropdown.png) no-repeat 98% center;
+        background-size: 100px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .nav-button img{
+        max-width: 100px;
+        height: 80px;
+    }
+
+    nav ul{
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        background-color: #008E89;
+        margin-top: 25px;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        height: 0;
+    }
+
+    nav ul.open{
+        height: auto;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a{
+        padding: 30px;
+        border-bottom: 1px solid #FFD32D;
+        display: block;
+        margin: 0;
+    }
+
+    .margin-hack{
+        margin-top: 250px;
+    }
+
+    .player-area ul li img, .computer-area img {
+        max-width: 100px;
+        width: 100%;
+        height: 130px;
+        display: inline;
+        border-radius: 50%;
+    }
+
+    .player-area ul li {
+        margin: 0;
+    }
+}
